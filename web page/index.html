@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Header</Header></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Travel</a>
+        <div class="group">
+            <ul class="nagivation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="action">
+                <li><a href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+                <div class="menuToggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="bg">
+            <img src="apple.png" class="cover">
+            <img src="" alt="">
+            <div class="content">
+
+                <h2>Explore The World</h2>
+                <a href="https://www.hotels.com/?sl=bn&locale=en_AS&pos=HCOM_ASIA&rffrid=sem.hcom.AS.google.003.00.03.s.kwrd%3Dc.412490294123.65082999071.1624532867..kwd-33469530.9070016..book%20a%20hotel.Cj0KCQjwpf2IBhDkARIsAGVo0D32kbgIZ7Qw3CJl3-rUVhRrcnTaxglUtVXSNQ0EgyPhmfnCejZXdJgaAgK4EALw_wcB.aw.ds&PSRC=AFF05&gclid=Cj0KCQjwpf2IBhDkARIsAGVo0D32kbgIZ7Qw3CJl3-rUVhRrcnTaxglUtVXSNQ0EgyPhmfnCejZXdJgaAgK4EALw_wcB" class="btn">Book Now</a>
+            </div>
+            <div class="searchBox">
+                <div class="inputBx">
+                    <p>Enter Location</p>
+                    <input type="text" placeholder="Ex: Fishling">
+                </div>
+                <div class="inputBx">
+                    <p>Check in</p>
+                    <input type="date" >
+                </div>
+                <div class="inputBx">
+                    <p>Check out</p>
+                    <input type="date" >
+                </div>
+                <div class="inputBx">
+                    <p class="white">Hello Guys</p>
+                    <a href="https://www.google.com/android/find" class="dj">Find</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let menuToggle = document.querySelector('.menuToggle');
+    let nagivation = document.querySelector('nagivation')
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active');
+        nagivation.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

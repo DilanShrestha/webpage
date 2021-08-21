@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500; 700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu',sans-serif;
+    text-size: 10cm;}
+header
+{
+    position: relative;
+    width: 95%;
+    padding: 20x;
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+}
+header .logo
+{
+ position: relative;
+ color: #222;
+ text-decoration: solid;
+ font-size: 1cm;
+ font-weight: 700;
+ 
+}
+.group
+{
+    position: relative;
+    display: flex;
+
+}
+.group .nagivation
+{
+    display: flex
+;
+}
+.group .action
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group ul li
+{
+list-style: none;
+
+}
+.group ul li a
+{
+    color: #222;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.group ul li a:hover
+{
+    color: #eb5e00;
+}
+.group .action
+{
+    margin-left: 10px;
+}
+.group .action li a
+{
+    font-size: 0.75cm;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    padding: 0 70px;
+
+}
+.banner .bg
+{
+position: relative;
+width: 100%;
+height: 70vh;
+background: #555;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.cover
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content
+{
+    position: relative;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.content h2
+{
+    position: relative;
+    color: #fff;
+    font-size: 4.5em;
+    text-align: center;
+}
+.btn
+{
+    display: inline-block;
+    background-color: #eb5e00;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+}
+
+.searchBox
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+justify-content: center;
+align-items: center;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+background: #fff;
+padding: 20px;
+transform: translateY(100%);
+box-shadow: 0 5px 25px rgba0,0,0,0,0.1);
+
+}
+.searchBox .inputBx
+{
+    margin: 0 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.searchBox .inputBx p
+{
+    color: #222;
+    margin-bottom: 10px;
+}
+.searchBox .inputBx p.white
+{
+    color: #fff;
+    display: none;
+}
+.searchBox .inputBx input
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 1px;
+    width: 100%;
+    min-width: 150px;
+    font-size: 1.1em;
+}
+.searchBox .inputBx input[type="submit"]
+{
+    outline: none;
+   border: rgb(0, 0, 0);
+    background: #ff5a26;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 13px;
+}
+.menuToggle
+{
+    display: none;
+}
+
+/* now, make it responsive */
+@media (max-width: 991px)
+
+{
+    .menuToggle
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 20PX;
+        width: 30px;
+        height: 30px; 
+        align-items: center;
+       
+    }
+    .menuToggle ion-icon
+    {
+position: absolute;
+--ionicon-stroke-width: 16px;
+display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(1)
+    {
+        display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(2)
+    {
+        display: none;
+    }
+
+    .menuToggle ion-icon:nth-child(1)
+    {
+        display: none;
+    }
+    .menuToggle ion-icon:nth-child(2)
+    {
+        display: flex;
+    }
+    .group .nagivation.active
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 999;
+}
+
+
+
+ header
+{ 
+    padding: 20px;
+}
+.banner
+{padding: 0;
+}
+.content h2
+{
+    font-size: 3em;
+}
+}
+.dj
+{
+    display: inline-block;
+    background-color: #eb5e00;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 10px;
+    letter-spacing: 4px;
+    position:relative;
+    left: 1vh;
+
+}
